@@ -1,0 +1,68 @@
+:root{
+    --header_bg-color:#06131f;
+    --main_bg-color: #1d2d3c;
+    --text-color:#dae9da;
+    --bold-text-color: white;
+    --card_bg-color:#112030;
+
+    --cards_num:3;
+    --cards_margin-x:2.2rem;
+}
+
+
+
+
+body{
+    color: var(--text-color);
+}
+
+.my_btn-container{
+    cursor: pointer;
+}
+
+header{
+    background-color: var(--header_bg-color);
+}
+
+header .my_img-container{
+    width: 50px;
+    display: inline-block;
+}
+
+main{
+    background-color: var(--main_bg-color);
+}
+
+main article .my_img-container{
+    width: 250px;
+}
+
+main article .my_title,
+main article .my_date{
+    color:var(--bold-text-color);
+}
+
+main .my_cards-container article{
+    background-color: var(--card_bg-color);
+    cursor: pointer;
+    margin: 1.2rem var(--cards_margin-x) 3.5rem var(--cards_margin-x);
+    width: calc(100%/var(--cards_num) - var(--cards_margin-x)*2);
+}
+
+main .my_cards-container article:hover{
+    filter: brightness(90%);
+}
+
+main .my_cards-container article:active{
+    filter: brightness(50%);
+}
+
+main .my_card-container{
+    background-color: var(--card_bg-color);
+    opacity: 0.9;
+}
+
+main .my_card-container .my_btn:active{
+    color: var(--card_bg-color);
+    background-color: var(--text-color);
+}
